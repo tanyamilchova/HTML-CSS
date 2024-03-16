@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <title>Дядовата ръкавичка</title>
+    <style>
+        #wrapper{
+            max-width: 1170px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 16px;
+            padding-right: 16px;
+            border: 1px solid black;
+
+        }
+        header{
+            width: 100%;
+            /* border: 2px solid salmon; */
+            height: 150px;
+            box-sizing: border-box;
+            
+        }
+       
+        #header{
+            width: 100%;
+            /* border: 2px solid salmon; */
+            height: 100px;
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        footer{
+            width: 100%;
+            /* border: 2px solid rgb(67, 31, 27); */
+            height: 80px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #logo{
+            height: 90px;
+            margin-top: 2px;
+        }
+        #title{
+            flex-grow: 1;
+            text-align: center;
+        }
+        .sectionSmal{
+            height: 30vh;
+            width: 100%;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+        .sectionLarge{
+            height: 60vh;
+            width: 100%;
+            /* border: 2px solid black; */
+            box-sizing: border-box;
+            background-image: url(assets/img/cats-2806290_960_720.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        nav {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+        nav ul li{
+            margin: 0 20px;
+        }
+        .menu-item{
+            text-decoration: none;
+            /* border: 2px solid red; */
+            padding: 8px;
+            border-radius: 30px;
+            display: inline-block;
+            width: 100px;
+            text-align:center;
+
+        }
+        .menu-item:hover{
+            background-color: khaki;
+            border:5px solid black
+
+        }
+        aside{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            width: 150px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .side-menu-item{
+            text-decoration: none;
+            text-align: center;
+            width: 100%;
+            color: white;
+            font-size: large;
+        }
+        .side-menu-row{
+            text-align: center;
+            margin: 10px 0px;
+           
+        }
+        .article-image{
+            max-width: 200px;
+            /* height: 200px; */
+        }
+        #article-wrapper{
+            display: flex;
+            justify-content: space-around;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            gap: 16px;
+            max-width: 200px;
+
+        }
+        article p{
+            text-align: justify;
+        }
+        article h1{
+            text-align: center;
+        }
+        .testimonials-img{
+            width: 80px;
+            height: 80px;
+            border-radius: 40px;
+        }
+        .testimonial{
+            margin: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 32px;
+        }
+        .testimonial-txt{
+            flex-grow: 1;
+            text-align: justify;
+        }
+        #subheading{
+            text-align: center;
+        }
+        .star-img{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            border: 1px solid yellow;
+            border-radius: 15px;
+            background-color: red;
+            background-image: url(assets/img/empty-star.png);
+            background-position: center;
+            background-size: contain;
+        }
+        .star-img:hover{
+            background-image: url(assets/img/star-icon.webp);
+    
+        }
+
+        .testimonial-image-wrapper{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+   <div id="wrapper">
+    <header>
+       <div id="header">
+        <img id="logo"  src="assets/img/—Pngtree—dog house vector illustration_8759685 (1).png" alt="PetHouse">
+        <h1 id="title">Welcome to our pet hotel</h1>
+        <div >
+            <label for="search">Search for room</label>
+            <input type="text" id="search">
+        </div>
+    </div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="menu-item">View gallery </a>
+                </li>
+                <li >
+                    <a class="menu-item" href="#">Find a room</a>
+                </li>
+                <li>
+                    <a class="menu-item" href="#">FAQ</a>
+                </li>
+                <li >
+                    <a class="menu-item" href="#">Contacts</a>
+                </li>
+                <li >
+                    <a class="menu-item" href="#">About us</a>
+                </li>
+
+            </ul>
+        </nav>
+       
+       
+    </header>
+    <main>
+        <section class="sectionLarge">
+            <aside>
+                <ul>
+                    <li class="side-menu-row"><a class="side-menu-item" href="#">option1</a></li>
+                    <li class="side-menu-row"><a class="side-menu-item" href="#">option2</a></li>
+                    <li class="side-menu-row"><a class="side-menu-item" href="#">option3</a></li>
+                    <li class="side-menu-row"><a class="side-menu-item" href="#">option4</a></li>
+                    <li class="side-menu-row"><a class="side-menu-item" href="#">option5</a></li>
+                </ul>
+        </section>
+        <section id="article-wrapper" >
+            <article>
+                <img class="article-image"src="assets/img/ducks-1124037_1280.jpg" alt="cleaner">
+                <h1>Търсим чистачка</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est consequuntur odio, expedita natus deleniti rerum, quo vitae nihil hic optio. Minus vitae praesentium voluptatibus asperiores! Ex, ratione culpa! Repellat!</p>
+            </article>
+            <article>
+                <img class="article-image" src="assets/img/agriculture-84702_1280.jpg" alt="pig">
+                <h1>Прасе избяга без да плати</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est consequuntur odio, expedita natus deleniti rerum, quo vitae nihil hic optio. Minus vitae praesentium voluptatibus asperiores! Ex, ratione culpa! Repellat!</p>
+            </article>
+            <article>
+                <img class="article-image" src="assets/img/cat-551554_1280.jpg" alt="cat">
+                <h1>Котка изчезна при неясни обстоятелства по време на ваканция</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est consequuntur odio, expedita natus deleniti rerum, quo vitae nihil hic optio. Minus vitae praesentium voluptatibus asperiores! Ex, ratione culpa! Repellat!</p>
+            </article>
+    
+         
+          
+      
+        </section>
+        <hr>
+        <p id="subheading">Proud clients</p>
+        <hr>
+        <section  >
+            <div class="testimonial">
+                 <div class="testimonial-image-wrapper">
+                    <img class="testimonials-img" src="assets/img/Immage.png" alt="parrot">  
+                    <div class="star-img">
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum deleniti repellat obcaecati distinctio magni. At sunt iusto nam, quae maxime repudiandae voluptatibus. Necessitatibus, provident perferendis velit odit architecto accusamus?
+                Deserunt mollitia at quae minus corporis est fuga labore eum consectetur nemo optio voluptatibus, a repellendus in nisi exercitationem ab delectus placeat, explicabo sed consequuntur quo officia vel. Commodi, labore.</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-image-wrapper">
+                    <img class="testimonials-img" src="assets/img/pexels-pixabay-35888.jpg" alt="parrot">
+                    
+                    <div class="star-img">
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum deleniti repellat obcaecati distinctio magni. At sunt iusto nam, quae maxime repudiandae voluptatibus. Necessitatibus, provident perferendis velit odit architecto accusamus?
+                Deserunt mollitia at quae minus corporis est fuga labore eum consectetur nemo optio voluptatibus, a repellendus in nisi exercitationem ab delectus placeat, explicabo sed consequuntur quo officia vel. Commodi, labore.</p>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-image-wrapper">
+                    <img class="testimonials-img" src="assets/img/fischer's-lovebird.webp" alt="parrot">    
+                    <div class="star-img">
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi rerum deleniti repellat obcaecati distinctio magni. At sunt iusto nam, quae maxime repudiandae voluptatibus. Necessitatibus, provident perferendis velit odit architecto accusamus?
+                Deserunt mollitia at quae minus corporis est fuga labore eum consectetur nemo optio voluptatibus, a repellendus in nisi exercitationem ab delectus placeat, explicabo sed consequuntur quo officia vel. Commodi, labore.</p>
+            </div>
+       
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>All rights reserved &copy;</p>
+    </footer>
+   </div>
+    <!-- <div class="maikati"></div> ->.name -->
+    
+</body>
+</html>
